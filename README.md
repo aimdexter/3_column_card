@@ -41,35 +41,6 @@ Users should be able to:
 - Sass
 - Mobile-first workflow
 
-### What I learned
-
-- Sass : variables
-
-$breakpoint-mobile: 375px;
-$breakpoint-desktop: 376px;
-$Brange: hsl(31, 77%, 52%);
-$Dark: hsl(184, 100%, 22%);
-$Very_dark: hsl(179, 100%, 13%);
-
-- Sass : Mixins
-@mixin button{
-        background-color: white;
-        font-family: 'Lexend Deca', sans-serif;
-        border-radius: 3rem;
-        padding: 1rem 2rem;
-        margin-top: 10px;
-        border-width: 0rem;
-        font-size: 15px;
-    }
-.grid-item-suvs{
-        padding: 3rem;      
-        background-color: $Dark;
-        button{
-            @include button;
-            color: $Dark;
-        }
-    }
-
 ### Useful resources
 
 - [Sass cheatsheet](https://devhints.io/sass)
