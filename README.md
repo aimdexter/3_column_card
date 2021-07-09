@@ -54,4 +54,4 @@ Users should be able to:
 ## Acknowledgments
 
 Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-Coded by <a href="https://github.com/aimdexter/">Your Name Here</a>.
+Coded by <a href="https://github.com/aimdexter/">Aimdexter</a>.
