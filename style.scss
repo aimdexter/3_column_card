@@ -13,7 +13,7 @@ $Very_dark: hsl(179, 100%, 13%);
     
     body{
 
-        font-size: 17px;
+        font-size: 20px;
         background-color: hsl(0, 0%, 95%);
     }
     .container {
@@ -22,7 +22,6 @@ $Very_dark: hsl(179, 100%, 13%);
         background-color: rgb(190, 170, 170);
         .heading{
             color: hsl(0, 0%, 95%);
-            padding: 1rem 0rem 0rem 0rem;
             font-family: 'Big Shoulders Display', cursive;
         }
     }
@@ -31,14 +30,13 @@ $Very_dark: hsl(179, 100%, 13%);
         font-size: 15px;
         color:hsla(0, 0%, 100%, 0.75);
         line-height: 25px;
-        margin: 0px 0px 15px 0px;
+        margin: 0px 0px 25px 0px;
 
     }
     @mixin a{
         background-color: white;
         font-family: 'Lexend Deca', sans-serif;
         display: inline-block;
-        margin: 0px 0px 15px 0px;
         border-radius: 3rem;
         padding: 1rem 2rem;
         font-size: 15px;
