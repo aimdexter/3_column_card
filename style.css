@@ -11,8 +11,6 @@
     background-color: #f2f2f2;
   }
   .container {
-    display: -ms-grid;
-    display: grid;
     margin: 5rem 1rem 0rem 1rem;
     border-radius: 7px;
     background-color: #beaaaa;
@@ -27,50 +25,69 @@
     font-size: 15px;
     color: rgba(255, 255, 255, 0.75);
     line-height: 25px;
+    margin: 0px 0px 15px 0px;
   }
   .grid-item-sedan {
     border-radius: 7px 7px 0px 0px;
     padding: 3rem;
     background-color: #e38826;
   }
-  .grid-item-sedan button {
+  .grid-item-sedan a {
     background-color: white;
     font-family: 'Lexend Deca', sans-serif;
+    display: inline-block;
+    margin: 0px 0px 15px 0px;
     border-radius: 3rem;
     padding: 1rem 2rem;
-    margin-top: 10px;
-    border-width: 0rem;
     font-size: 15px;
+    text-decoration: none;
     color: #e38826;
+  }
+  .grid-item-sedan a:hover {
+    color: rgba(255, 255, 255, 0.75);
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.75);
   }
   .grid-item-suvs {
     padding: 3rem;
     background-color: #006970;
   }
-  .grid-item-suvs button {
+  .grid-item-suvs a {
     background-color: white;
     font-family: 'Lexend Deca', sans-serif;
+    display: inline-block;
+    margin: 0px 0px 15px 0px;
     border-radius: 3rem;
     padding: 1rem 2rem;
-    margin-top: 10px;
-    border-width: 0rem;
     font-size: 15px;
+    text-decoration: none;
     color: #006970;
+  }
+  .grid-item-suvs a:hover {
+    color: rgba(255, 255, 255, 0.75);
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.75);
   }
   .grid-item-luxury {
     border-radius: 0px 0px 7px 7px;
     padding: 3rem;
     background-color: #004241;
   }
-  .grid-item-luxury button {
+  .grid-item-luxury a {
     background-color: white;
     font-family: 'Lexend Deca', sans-serif;
+    display: inline-block;
+    margin: 0px 0px 15px 0px;
     border-radius: 3rem;
     padding: 1rem 2rem;
-    margin-top: 10px;
-    border-width: 0rem;
     font-size: 15px;
+    text-decoration: none;
     color: #004241;
+  }
+  .grid-item-luxury a:hover {
+    color: rgba(255, 255, 255, 0.75);
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.75);
   }
 }
 /*# sourceMappingURL=style.css.map */

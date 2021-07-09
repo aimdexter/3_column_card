@@ -12,11 +12,11 @@ $Very_dark: hsl(179, 100%, 13%);
     }
     
     body{
+
         font-size: 17px;
         background-color: hsl(0, 0%, 95%);
     }
     .container {
-        display: grid;
         margin: 5rem 1rem 0rem 1rem;
         border-radius: 7px;
         background-color: rgb(190, 170, 170);
@@ -31,30 +31,38 @@ $Very_dark: hsl(179, 100%, 13%);
         font-size: 15px;
         color:hsla(0, 0%, 100%, 0.75);
         line-height: 25px;
+        margin: 0px 0px 15px 0px;
+
     }
-    @mixin button{
+    @mixin a{
         background-color: white;
         font-family: 'Lexend Deca', sans-serif;
+        display: inline-block;
+        margin: 0px 0px 15px 0px;
         border-radius: 3rem;
         padding: 1rem 2rem;
-        margin-top: 10px;
-        border-width: 0rem;
         font-size: 15px;
+        text-decoration: none;
+        &:hover {
+            color:hsla(0, 0%, 100%, 0.75);
+            background-color: transparent;
+            border: 2px solid hsla(0, 0%, 100%, 0.75);
+          }
     }
     .grid-item-sedan{
         border-radius: 7px 7px 0px 0px;
         padding: 3rem;      
         background-color: $Brange;
-        button{
-            @include button;
+        a{
+            @include a;
             color: $Brange;
         }
     }
     .grid-item-suvs{
         padding: 3rem;      
         background-color: $Dark;
-        button{
-            @include button;
+        a{
+            @include a;
             color: $Dark;
         }
     }
@@ -62,15 +70,12 @@ $Very_dark: hsl(179, 100%, 13%);
         border-radius: 0px 0px 7px 7px;
         padding: 3rem;      
         background-color: $Very_dark;
-        button{
-            @include button;
+        a{
+            @include a;
             color: $Very_dark;
         }
     }
 }
-
-
-
 
 @media (min-width: $breakpoint-desktop) {
       
