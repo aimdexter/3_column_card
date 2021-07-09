@@ -1,0 +1,77 @@
+$breakpoint-mobile: 375px;
+$breakpoint-desktop: 376px;
+$Brange: hsl(31, 77%, 52%);
+$Dark: hsl(184, 100%, 22%);
+$Very_dark: hsl(179, 100%, 13%);
+@media (max-width: $breakpoint-mobile) {
+    .attribution { 
+        font-size: 11px; text-align: center;
+        a{ 
+            color: hsl(228, 45%, 44%);
+        }  
+    }
+    
+    body{
+        font-size: 17px;
+        background-color: hsl(0, 0%, 95%);
+    }
+    .container {
+        display: grid;
+        margin: 5rem 1rem 0rem 1rem;
+        border-radius: 7px;
+        background-color: rgb(190, 170, 170);
+        .heading{
+            color: hsl(0, 0%, 95%);
+            padding: 1rem 0rem 0rem 0rem;
+            font-family: 'Big Shoulders Display', cursive;
+        }
+    }
+    p{
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 15px;
+        color:hsla(0, 0%, 100%, 0.75);
+        line-height: 25px;
+    }
+    @mixin button{
+        background-color: white;
+        font-family: 'Lexend Deca', sans-serif;
+        border-radius: 3rem;
+        padding: 1rem 2rem;
+        margin-top: 10px;
+        border-width: 0rem;
+        font-size: 15px;
+    }
+    .grid-item-sedan{
+        border-radius: 7px 7px 0px 0px;
+        padding: 3rem;      
+        background-color: $Brange;
+        button{
+            @include button;
+            color: $Brange;
+        }
+    }
+    .grid-item-suvs{
+        padding: 3rem;      
+        background-color: $Dark;
+        button{
+            @include button;
+            color: $Dark;
+        }
+    }
+    .grid-item-luxury{
+        border-radius: 0px 0px 7px 7px;
+        padding: 3rem;      
+        background-color: $Very_dark;
+        button{
+            @include button;
+            color: $Very_dark;
+        }
+    }
+}
+
+
+
+
+@media (min-width: $breakpoint-desktop) {
+      
+}
