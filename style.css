@@ -1,89 +1,143 @@
-@media (max-width: 375px) {
-  .attribution {
-    font-size: 11px;
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  font-size: 20px;
+  background-color: #f2f2f2;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  border-radius: 7px;
+  background-color: #f2f2f2;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 3rem 0.5rem 0rem 0.5rem;
+}
+
+main .heading {
+  color: #f2f2f2;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 25px;
+  margin: 0px 0px 25px 0px;
+}
+
+.grid-item-sedan {
+  border-radius: 7px 7px 0px 0px;
+  padding: 3rem;
+  background-color: #e38826;
+}
+
+.grid-item-sedan a {
+  background-color: white;
+  font-family: 'Lexend Deca', sans-serif;
+  display: inline-block;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  font-size: 15px;
+  text-decoration: none;
+  color: #e38826;
+}
+
+.grid-item-sedan a:hover {
+  color: rgba(255, 255, 255, 0.75);
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 1px 1px white;
+          box-shadow: 0 0 1px 1px white;
+}
+
+.grid-item-suvs {
+  padding: 3rem;
+  background-color: #006970;
+}
+
+.grid-item-suvs a {
+  background-color: white;
+  font-family: 'Lexend Deca', sans-serif;
+  display: inline-block;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  font-size: 15px;
+  text-decoration: none;
+  color: #006970;
+}
+
+.grid-item-suvs a:hover {
+  color: rgba(255, 255, 255, 0.75);
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 1px 1px white;
+          box-shadow: 0 0 1px 1px white;
+}
+
+.grid-item-luxury {
+  border-radius: 0px 0px 7px 7px;
+  padding: 3rem;
+  background-color: #004241;
+}
+
+.grid-item-luxury a {
+  background-color: white;
+  font-family: 'Lexend Deca', sans-serif;
+  display: inline-block;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  font-size: 15px;
+  text-decoration: none;
+  color: #004241;
+}
+
+.grid-item-luxury a:hover {
+  color: rgba(255, 255, 255, 0.75);
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 1px 1px white;
+          box-shadow: 0 0 1px 1px white;
+}
+
+@media (min-width: 616px) {
+  main {
+    -ms-grid-columns: (600px)[1];
+        grid-template-columns: repeat(1, 600px);
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10%;
     text-align: center;
   }
-  .attribution a {
-    color: #3e52a3;
-  }
-  body {
-    font-size: 20px;
-    background-color: #f2f2f2;
-  }
-  .container {
-    margin: 5rem 1rem 0rem 1rem;
+}
+
+@media (min-width: 1216px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (300px)[3];
+        grid-template-columns: repeat(3, 300px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10%;
     border-radius: 7px;
-    background-color: #beaaaa;
-  }
-  .container .heading {
-    color: #f2f2f2;
-    font-family: 'Big Shoulders Display', cursive;
-  }
-  p {
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.75);
-    line-height: 25px;
-    margin: 0px 0px 25px 0px;
+    text-align: left;
   }
   .grid-item-sedan {
-    border-radius: 7px 7px 0px 0px;
-    padding: 3rem;
-    background-color: #e38826;
-  }
-  .grid-item-sedan a {
-    background-color: white;
-    font-family: 'Lexend Deca', sans-serif;
-    display: inline-block;
-    border-radius: 3rem;
-    padding: 1rem 2rem;
-    font-size: 15px;
-    text-decoration: none;
-    color: #e38826;
-  }
-  .grid-item-sedan a:hover {
-    color: rgba(255, 255, 255, 0.75);
-    background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.75);
-  }
-  .grid-item-suvs {
-    padding: 3rem;
-    background-color: #006970;
-  }
-  .grid-item-suvs a {
-    background-color: white;
-    font-family: 'Lexend Deca', sans-serif;
-    display: inline-block;
-    border-radius: 3rem;
-    padding: 1rem 2rem;
-    font-size: 15px;
-    text-decoration: none;
-    color: #006970;
-  }
-  .grid-item-suvs a:hover {
-    color: rgba(255, 255, 255, 0.75);
-    background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 7px 0px 0px 7px;
   }
   .grid-item-luxury {
-    border-radius: 0px 0px 7px 7px;
-    padding: 3rem;
-    background-color: #004241;
-  }
-  .grid-item-luxury a {
-    background-color: white;
-    font-family: 'Lexend Deca', sans-serif;
-    display: inline-block;
-    border-radius: 3rem;
-    padding: 1rem 2rem;
-    font-size: 15px;
-    text-decoration: none;
-    color: #004241;
-  }
-  .grid-item-luxury a:hover {
-    color: rgba(255, 255, 255, 0.75);
-    background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 0px 7px 7px 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
